@@ -10,7 +10,7 @@ public class Escuadron {
     private List<Dron> drones = new ArrayList<>();
 
     public void agregarDron(Dron dron){
-        if (Ciudad.getInstance().cantidadMaximaDrones() < drones.size()) {
+        if (Ciudad.getInstance().getCantidadMaximaDrones() < drones.size()) {
             drones.add(dron);
         }else{
             System.out.println("No se puede agregar más drones");
