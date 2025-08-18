@@ -28,5 +28,12 @@ public class Escuadron {
     public Boolean hayUnoAvanzado(){
         return drones.stream().anyMatch(d -> d.esAvanzado());
     }
+
+    public void operarEn(Zona unaZona){
+        if(this.puedeOperar(unaZona)){
+            unaZona.recibirOperacion();
+            drones.stream().forEach(d -> d.disminuirAutonomia());
+        }
+    }
     
 }

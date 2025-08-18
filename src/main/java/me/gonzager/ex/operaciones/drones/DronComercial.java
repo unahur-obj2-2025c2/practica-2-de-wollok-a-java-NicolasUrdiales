@@ -3,7 +3,7 @@ package me.gonzager.ex.operaciones.drones;
 import me.gonzager.ex.operaciones.misiones.MisionEjecutable;
 
 public class DronComercial extends Dron {
-    public DronComercial(Integer autonomia, MisionEjecutable mision, Integer nivelProcesamiento) {
+    public DronComercial(Double autonomia, MisionEjecutable mision, Double nivelProcesamiento) {
         super(autonomia, mision, nivelProcesamiento);
     }
 
