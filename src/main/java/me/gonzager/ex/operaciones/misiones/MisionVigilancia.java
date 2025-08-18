@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.gonzager.ex.operaciones.drones.Dron;
+import me.gonzager.ex.operaciones.sensores.Sensor;
 
 public class MisionVigilancia implements MisionEjecutable{
     private final List<Sensor> sensores = new ArrayList<>();
